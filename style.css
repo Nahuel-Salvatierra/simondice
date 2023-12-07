@@ -1,0 +1,28 @@
+.block {
+  opacity: 0.5;
+  transition: opacity  ease 0.5s;
+}
+
+body {
+  background-color: black;
+}
+
+#square-1 {
+  background-color: red;
+  height: 30vh;
+}
+
+#square-2 {
+  background-color: blue;
+  height: 30vh;
+}
+
+#square-3 {
+  background-color: green;
+  height: 30vh;
+}
+
+#square-4 {
+  background-color: yellow;
+  height: 30vh;
+}
