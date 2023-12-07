@@ -22,13 +22,12 @@ function moveUser(e) {
 
 function setFunctionality() {
 	$squares.forEach((square) => {
-    console.log(square)
-		square.onClick = moveUser;
+		square.addEventListener("click", moveUser);
 	});
 }
 
 function unsetFuncionality() {
 	$squares.forEach((square) => {
-		square.onClick = () => {};
+		square.removeEventListener()
 	});
 }
