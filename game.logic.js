@@ -1,6 +1,5 @@
 const $squares = document.querySelectorAll(".block");
-const movementsMachine = [];
-const movementsUser = [];
+const $container = document.querySelector(".container");
 
 function movimientoMaquina() {
 	const movement = randomSquare(1, 4);
@@ -14,20 +13,10 @@ function randomSquare(min, max) {
 	return $randomSquare;
 }
 
-function moveUser(e) {
-	e.target;
-	show(e.target);
-	movementsUser.push(e.target);
-}
-
 function setFunctionality() {
-	$squares.forEach((square) => {
-		square.addEventListener("click", moveUser);
-	});
+	$container.addEventListener("click", moveUser);
 }
 
 function unsetFuncionality() {
-	$squares.forEach((square) => {
-		square.removeEventListener()
-	});
+	$container.removeEventListener("click", moveUser);
 }

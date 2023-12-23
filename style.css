@@ -26,3 +26,7 @@ body {
   background-color: yellow;
   height: 30vh;
 }
+
+#lose{
+  display: none;
+}
